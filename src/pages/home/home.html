@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Ionic FlashLight
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-row justify-content-center>
+    <p> Click on button to toggle device flashlight. </p>
+  </ion-row>
+
+  <ion-item >
+    Flash Light is {{ flashLightStatus ? 'On' : 'Off' }} 
+  </ion-item>
+
+  <ion-row justify-content-center id="flashButton">
+    <ion-col col-2>
+      &nbsp;
+    </ion-col>
+    <ion-col col-6>
+      <button ion-button block round (click)="toggleFlashLight()" text-capitalize>Toggle FlashLight</button>
+    </ion-col>
+    <ion-col col-2>
+      &nbsp;
+    </ion-col>
+  </ion-row>
+
+</ion-content>
